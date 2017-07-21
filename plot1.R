@@ -1,4 +1,4 @@
-# source("read_data.R")
+source("read_data.R")
 
 outFile = paste0(getwd(), "/plot1.png")
 png(outFile, height=480, width=480)
