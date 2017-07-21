@@ -2,7 +2,7 @@ library(lubridate)
 
 path <- "~/Documents/_Work/Coursera/DataScience/household_power_consumption.txt"
 
-data <- read.csv(path, na.strings = c("?"), sep = ";", header = TRUE)
+data <- read.csv(path, na.strings = c("?"), sep = ";")
 data$Date <- dmy(data$Date)
 data$Time <- hms(data$Time)
 
